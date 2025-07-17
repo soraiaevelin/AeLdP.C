@@ -1,0 +1,28 @@
+Questões feitas no dia anterior:
+
+1)
+#include <stdio.h>
+
+int main() {
+    int a=35;
+    int b=7;
+    int soma,dif,multiplicacao,divisao,resto;
+    
+    soma=a+b;
+    dif=a-b;
+    multiplicacao=a*b;
+    divisao=a/b;
+    resto=a%b;
+    
+    
+     printf("A soma é:%d\n",a,b,soma);
+     printf("A subtração é:%d\n",a,b,dif);
+     printf("A multiplicação é:%d\n",a,b,multiplicacao);
+     printf("A divisão é:%d\n",a,b,divisao);
+     printf("O resto é:%d\n",a,b,resto);
+    
+    
+    
+    
+
+    return 0;
