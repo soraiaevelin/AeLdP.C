@@ -20,3 +20,23 @@ int main() {
 
 2)
 
+#include <stdio.h>
+
+int main() {
+    int ano,mes,dia;
+    
+    printf("informe a data no formato aaaa-mm-dd:");
+    
+    scanf("%d-%d-%d",&ano,&mes,&dia);
+    
+     printf("A data formatada é:%02d/%02d/%04d\n", dia ,mes ,ano);
+    
+    return 0;
+}
+
+3)
+
+
+
+
+
