@@ -103,5 +103,7 @@ int main() {
 
     volume = PI * raio * raio * altura;
 
+    printf("Valor do volume é %.2f\n", volume);
+
     return 0;
 }
