@@ -68,6 +68,8 @@ int main() {
 
     fahrenheit = (9 * celsius + 160) / 5;
 
+     printf("A temperatura em fahrenheit é: %.2f \n", fahrenheit);
+
     return 0;
 }
 
@@ -80,6 +82,8 @@ int main() {
 
     printf("Digite a temperatura em Fahrenheit: ");
     scanf("%f", &fahrenheit);
+
+     printf("A temperatura em celsius é: %.2f \n", celsius);
 
     return 0;
 }
