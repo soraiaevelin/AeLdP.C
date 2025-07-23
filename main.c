@@ -94,6 +94,7 @@ int main() {
 
 int main() {
     float raio, altura, volume;
+    const float pi=3.14;
 
     printf("Digite o raio da base da lata (em cm): ");
     scanf("%f", &raio);
@@ -101,7 +102,7 @@ int main() {
     printf("Digite a altura da lata (em cm): ");
     scanf("%f", &altura);
 
-    volume = PI * raio * raio * altura;
+    volume = pi * raio * raio * altura;
 
     printf("Valor do volume é %.2f\n", volume);
 
