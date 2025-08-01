@@ -1,0 +1,121 @@
+1)
+ #include <stdio.h>
+
+int main() {
+    int numero, num1, num2, num3, num4, num5;
+
+    printf("Digite um número de 5 dígitos: ");
+    scanf("%d", &numero);
+
+    num1 = numero / 10000;
+    num2 = (numero / 1000) % 10;
+    num3 = (numero / 100) % 10;
+    num4 = (numero / 10) % 10;
+    num5 = numero % 10;
+
+    printf("%d   %d   %d   %d   %d\n", num1, num2, num3, num4, num5);
+
+    return 0;
+}
+
+2)
+
+#include <stdio.h>
+
+int main() {
+    int i;
+
+    printf("Numero\tQuadrado\tCubo\n");
+
+    for(i = 0; i <= 10; i++) {
+        printf("%d\t\t%d\t\t\t%d\n", i, i*i, i*i*i);
+    }
+
+    return 0;
+}
+
+3)
+#include <stdio.h>
+
+int main() {
+    short idade;
+    int deposito;
+    long conta;
+
+    printf("Informe sua idade: ");
+    scanf("%hd", &idade);
+
+    printf("Informe o valor do deposito: ");
+    scanf("%d", &deposito);
+
+    printf("Informe o número da conta: ");
+    scanf("%ld", &conta);
+
+    printf("\nIdade: %hd\nDepósito: %d\nConta: %ld\n", idade, deposito, conta);
+
+    return 0;
+}
+
+4)
+
+#include <stdio.h>
+
+int main() {
+    int opcao;
+    int num1, num2, resultado;
+
+    printf("Escolha uma opção:\n");
+    printf("1 - Soma\n2 - Subtração\n3 - Multiplicação\n4 - Divisão\n");
+    scanf("%d", &opcao);
+
+    printf("Informe o primeiro número: ");
+    scanf("%d", &num1);
+
+    printf("Informe o segundo número: ");
+    scanf("%d",&num2);
+    
+    switch(opcao) {
+        case 1:
+            resultado = num1 + num2;
+            printf("Resultado: %.2d\n", resultado);
+            break;
+        case 2:
+            resultado = num1 - num2;
+            printf("Resultado: %.2d\n", resultado);
+            break;
+        case 3:
+            resultado = num1 * num2;
+            printf("Resultado: %.2d\n", resultado);
+            break;
+        case 4:
+            if(num2 != 0)
+                resultado = num1 / num2;
+            else
+                printf("Erro: não é permitido divisão po 0!\n");
+            printf("Resultado: %.2d\n", resultado);
+            break;
+        default:
+            printf("Opção inválida!\n");
+    }
+
+    return 0;
+}
+
+5)
+
+#include <stdio.h>
+
+int main() {
+    int numero;
+
+    printf("Digite um número inteiro: ");
+    scanf("%d", &numero);
+
+    if ((numero % 2 == 0 || numero % 3 == 0) && !(numero % 2 == 0 && numero % 3 == 0)) {
+        printf("O número é divisível por 2 ou por 3, mas não pelos dois ao mesmo tempo.\n");
+    } else {
+        printf("O número NÃO atende à condição.\n");
+    }
+
+    return 0;
+}
