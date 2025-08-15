@@ -111,10 +111,17 @@ int main() {
     printf("Digite um número inteiro: ");
     scanf("%d", &numero);
 
-    if ((numero % 2 == 0 || numero % 3 == 0) && !(numero % 2 == 0 && numero % 3 == 0)) {
-        printf("O número é divisível por 2 ou por 3, mas não pelos dois ao mesmo tempo.\n");
+    int divisao2 = numero % 2 == 0;
+    int divisao3 = numero % 3 == 0;
+
+    if (divisao2 && !divisao3) {
+        printf("%d -> divisao2\n", numero);
+    } else if (divisao3 && !divisao2) {
+        printf("%d -> divisao3\n", numero);
+    } else if (!divisao2 && !divisao3) {
+        printf("%d -> nao divisao2 nem divisao3\n", numero);
     } else {
-        printf("O número NÃO atende à condição.\n");
+        printf("%d -> divisao2 e divisao3\n", numero);
     }
 
     return 0;
