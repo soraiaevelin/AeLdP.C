@@ -108,20 +108,20 @@ int main() {
 int main() {
     int numero;
 
-    printf("Digite um número inteiro: ");
+    printf("Informe um número inteiro: ");
     scanf("%d", &numero);
 
-    int divisao2 = numero % 2 == 0;
-    int divisao3 = numero % 3 == 0;
+    int div2 = numero % 2 == 0;
+    int div3 = numero % 3 == 0;
 
-    if (divisao2 && !divisao3) {
-        printf("%d -> divisao2\n", numero);
-    } else if (divisao3 && !divisao2) {
-        printf("%d -> divisao3\n", numero);
-    } else if (!divisao2 && !divisao3) {
-        printf("%d -> nao divisao2 nem divisao3\n", numero);
+    if (div2 && !div3) {
+        printf("O número %d é divisível por 2, mas não por 3.\n", numero);
+    } else if (div3 && !div2) {
+        printf("O número %d é divisível por 3, mas não por 2.\n", numero);
+    } else if (!div2 && !div3) {
+        printf("O número não atende a condição\n");
     } else {
-        printf("%d -> divisao2 e divisao3\n", numero);
+        printf("O número %d é divisível por 2 e por 3.\n", numero);
     }
 
     return 0;
